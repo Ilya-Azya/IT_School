@@ -1,0 +1,318 @@
+{% extends 'app/main.html' %}
+{% load static %}
+
+{% block title %} CHS_IT_School {% endblock %}
+
+
+{% block body %}
+
+    <div class="app">
+        <div class="page_content">
+            <div id="top"></div>
+            <div class="header">
+                <div class="header_mask">
+                    <div class="content">
+                        <div id="cap" class="cap">
+                            <div class="cap_logo">
+                                <img src="{% static 'app/img/logo-removebg-preview.png' %}" class="logo_img">
+                                <a href="#top" id="link"><h1 class="logo_title">Cambridge<br>IT School</h1></a>
+                            </div>
+                            <div class="menu-burger">
+                                <span></span>
+                            </div>
+                            <div class="cap_link_list">
+                                <a href="#spec" id="link">Специальности</a>
+                                <a href="#teachers" id="link">Преподаватели</a>
+                                <a href="#about" id="link">О нас</a>
+                                <a href="#cost" id="link">Стоимость</a>
+                                <a href="#contacts" id="link">Контакты</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="invite_title">
+                                Cambridge IT School
+                            </h3>
+                            <p class="invite_text">СОВМЕСТНО С Cambridge High School </p>
+                            <p class="invite_text mt-20">Объявляет ограниченный набор в ускоренную программу подготовки
+                                специалистов в IT-сфере</p>
+                            <p class="invite_subtext">
+                                Выдаем американский диплом
+                            </p>
+                            <a href="#contacts">
+                                <button class="invite_button">ПОДАТЬ ЗАЯВКУ</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="taimer"></div>
+            <div class="countdown">
+                <div class="countdown_mask">
+                    <div class="content">
+
+                        <div class="content_text">
+                            <p class="text">мест осталось:</p>
+                        </div>
+                        <div class="counter_free">
+                            <span id="counter_free" class="badges"></span>
+                        </div>
+                        <div class="content_text">
+                            <p class="text">До начала занятий: <br><br></p>
+                        </div>
+                        <div class="taimer">
+                            {% include 'app/taimer.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="spec"></div>
+            <div class="spec">
+                <div class="spec_mask">
+                    <div class="content">
+                        <div class="spec_info">
+                            <h3 class="spec_title">СПЕЦИАЛЬНОСТИ</h3>
+                            <p class="spec_text">IT PART of CHS производит ограниченный набор слушателей в ускоренную
+                                программу подготовки специалистов АЙти по следующим специалдизациям:</p>
+                        </div>
+                        <div class="spec_blocks">
+                            <div class="direction">
+                                <h5 class="direction_title">Web development<br>Python/Django</h5>
+                                <div class="direction_list">
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>Algoritms</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>UI/UX DESIGN</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>АДАПТИВНАЯ ВЕРСТКА (HTML, CSS, JS)</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>ПСИХОЛОГИЯ ВЕБ-ДИЗАЙНА</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="direction">
+                                <h5 class="direction_title">Web development<br>PHP/Laravel</h5>
+                                <div class="direction_list">
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>Algoritms</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>UI/UX DESIGN</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>АДАПТИВНАЯ ВЕРСТКА (HTML, CSS, JS)</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>ПСИХОЛОГИЯ ВЕБ-ДИЗАЙНА</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="direction">
+                                <h5 class="direction_title">Automated testing/C#</h5>
+                                <div class="direction_list">
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>Algoritms</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>UI/UX DESIGN</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>АДАПТИВНАЯ ВЕРСТКА (HTML, CSS, JS)</span>
+                                    </div>
+                                    <div class="direction_text">
+                                        <span class="list__dot fa fa-dot-circle-o"></span>
+                                        <span>ПСИХОЛОГИЯ ВЕБ-ДИЗАЙНА</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec_subinfo">
+                            <p class="spec_text">
+                                Число слушателей ограничено. В группы, начинающие работать в апреле планируется набрать
+                                72 слушателя.
+                                Формируются специализированные группы по 12 студентов.
+                            </p>
+                            <h2 class="text">Группы</h2>
+                            <p class="adv_text">
+                            <ul>
+                                <li class="adv_text">12 человек в группе</li>
+                                <li class="adv_text">Куратор для каждой группы</li>
+                                <li class="adv_text">Индивидуальный поход</li>
+                                <li class="adv_text">Практические задания</li>
+                            </ul>
+                            </p>
+                            <p class="spec_text">
+                                Обучение производится 4 месяца в онлайн-режиме на русском языке. Занятия проводятся 2
+                                раза в неделю по 2 часа.
+                                Занятия начинаются 1 апреля 2023 года.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="teachers"></div>
+            <div class="teachers">
+                <div class="teachers_mask">
+                    <div class="content">
+                        <h3 class="teach_title">Наши преподаватели</h3>
+                        <div class="corusel">
+                            {% include 'app/carousel.html' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about"></div>
+            <div class="about">
+                <div class="about_mask">
+                    <div class="content">
+                        <h2 class="teach_title">О Нас</h2>
+                        <div class="about_text">
+                            <p class="about_subtext">
+                                Cambridge IT School является филиалом Cambridge High School. <br>
+                                CHS Online — русскоязычная, украиноязычная и белорусскоязычная школа, работающая онлайн.
+                            </p>
+                            <a href="http://chschool.eu/">
+                                <img src="https://chschool.eu/assets/img/logo.png" class="logo_chs">
+                            </a>
+                        </div>
+                        <div class="adv">
+                            <h2 class="text">Наши преимущества</h2>
+                            <p class="adv_text">
+                            <ul>
+                                <li class="adv_text">выдача американского сертификата CHS;</li>
+                                <li class="adv_text">гарантированное трудоустройство в Айти компании Европы и США;</li>
+                                <li class="adv_text">обучение на русском языке;</li>
+                                <li class="adv_text">преподаватели практики;</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="advantages"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cost"></div>
+            <div class="cost">
+                <div class="cost_mask">
+                    <div class="content">
+                        <h2 class="teach_title">Стоимость</h2>
+                        <div class="cost_box">
+                            <div class="cost_elem">
+                                <h5>Lite</h5>
+                                <div class="elem_list">
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> Для
+                                        учащихся CHS
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 4 часа в
+                                        неделю
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 2 занятия
+                                        в неделю
+                                    </div>
+                                </div>
+                                <p class="price">200€</p>
+                            </div>
+                            <div class="cost_elem">
+                                <h5>Regular</h5>
+                                <div class="elem_list">
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> Для всех
+                                        желающих
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 4 часа в
+                                        неделю
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 2 занятия
+                                        в неделю
+                                    </div>
+                                </div>
+                                <p class="price">250€</p>
+                            </div>
+                            <div class="cost_elem">
+                                <h5>Elevated</h5>
+                                <div class="elem_list">
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> Для всех
+                                        желающих
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 6 часов в
+                                        неделю
+                                    </div>
+                                    <div class="elem_text"><i class="fa-sharp fa-regular fa-circle-check"></i> 3 занятия
+                                        в неделю
+                                    </div>
+                                </div>
+                                <p class="price">300€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts"></div>
+            <div class="contacts">
+                <div class="contacts_mask">
+                    <div class="content">
+                        <h2 class="teach_title">Контакты</h2>
+                        <div class="forms">
+                            {% include 'app/form.html' %}
+                        </div>
+                        <div class="contact_list">
+                            <div class="contact_text"><a href="tel:+38267878307" class="a_cont"><i
+                                    class="fa-solid fa-phone-volume"></i> +382 67 878 307</a></div>
+                            <div class="contact_text"><a href="mailto:info@chschool.eu" class="a_cont"><i
+                                    class="fa-solid fa-envelope"></i> info@chschool.eu</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer"></div>
+            <div class="footer">
+                <div class="footer_mask">
+                    <div class="content">
+                        <div class="footer_content">
+                            <div class="footer_left">
+                                <div class="footer_req">
+                                    <div class="footer_title">Реквизиты</div>
+                                    <div class="footer_text">Cambridge High School M-GYMNASIUM LLD</div>
+                                    <div class="footer_text">186 ALEWIFE BROOK PKWY #1116, CAMBRIDGE, MA, 02138, USA
+                                    </div>
+                                    <div class="footer_text">Certificate of registration No. 001534690 / 28.09.2021
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer_right">
+                                <div class="footer_cont">
+                                    <a href="" class="cont_social"><i class="fa-regular fa-paper-plane"></i></a>
+                                    <a href="" class="cont_social"><i class="fa-brands fa-viber"></i></a>
+                                    <a href="" class="cont_social"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="" class="cont_social"><i class="fa-regular fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_rules">© 2023. Все права закреплены за Cambridge High School M-GYMNASIUM
+                            LLD
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

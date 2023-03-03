@@ -1,0 +1,11 @@
+<form method="post" id="tg" class="form_back">
+    {% csrf_token %}
+
+    {{ form.name }}<br>
+    {{ form.phone_num }}<br>
+    {{ form.user_mail }}<br>
+
+    <div id="success" class="alert alert-success" role="alert" style="display: none"></div>
+
+    <button id="send_req" class="btn" type="submit">Отправить заявку</button>
+</form>
