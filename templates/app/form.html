@@ -1,9 +1,9 @@
 <form method="post" id="tg" class="form_back">
     {% csrf_token %}
 
-    {{ form.name }}<br>
-    {{ form.phone_num }}<br>
-    {{ form.user_mail }}<br>
+    <input placeholder="Ваше имя" class="form-control" name="name"><br>
+    <input placeholder="Номер телефона" class="form-control" name="phone_num"><br>
+    <input placeholder="Адрес электронной почты" class="form-control" name="user_mail"><br>
 
     <div id="success" class="alert alert-success" role="alert" style="display: none"></div>
 
