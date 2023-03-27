@@ -20,8 +20,13 @@ $(".cap_link_list").bind("click", function () {
     $('.menu-burger').trigger("click")
 })
 
+$(".cap_logo").bind("click", function () {
+    if ($('.menu-burger').hasClass('open-menu')) {
+        $('.menu-burger').trigger("click")
+    }
+})
 
-let date = new Date('Apr 7 2023 16:00:00');
+let date = new Date('Apr 24 2023 16:00:00');
 
 function counts() {
     let now = new Date();

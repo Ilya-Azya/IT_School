@@ -231,7 +231,7 @@ a:hover {
 .about_text {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about_subtext {
@@ -394,8 +394,8 @@ a:hover {
 
     .badges {
         margin-left: 0px !important;
-        font-size: 17px !important;
-        padding: 5px 5px !important;
+        font-size: 16px !important;
+        padding: 5px 3px !important;
     }
 
     .spec_title, .teach_title {
@@ -409,6 +409,8 @@ a:hover {
 
     .direction {
         padding: 10px 5px !important;
+        width: 70% !important;
+        text-transform: uppercase;
     }
 
 
@@ -432,6 +434,7 @@ a:hover {
 
     .cost_elem {
         padding: 15px 5px 5px 5px !important;
+        width: 70% !important;
     }
 
     .form_back {
